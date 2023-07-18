@@ -12,10 +12,9 @@ h1 {
 	margin: 0;
 }
 
-a {
+/* a {
 	text-decoration: none;
-	color: white;
-}
+} */
 
 h2 {
 	font-size: 40px;
@@ -55,6 +54,10 @@ h3 {
 	color: white;
 }
 
+
+.svchat {
+	color: #32ff5b;
+}
 
 .info {
 	font-size: 1.3em;
