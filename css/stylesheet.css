@@ -25,6 +25,18 @@ h3 {
 	margin: 25px 0 0 0;
 }
 
+  ::-webkit-scrollbar-track {
+    border-radius: 0.125rem;
+    background-color: lightgray;
+  }
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+    border-radius: 0.125rem;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0.125rem;
+    background-color: gray;};
+
 .btn {
 	padding: 10px 25px;
 	background: #4286f4;
@@ -80,13 +92,13 @@ h3 {
 
 #description {
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	margin: 65px 0;
 	flex-wrap: wrap;
 }
 
 #description p {
-	margin: 5px 0 0 0;
+	margin: 5px 0 0 0; 
 }
 
 #description div {
@@ -107,6 +119,28 @@ h3 {
 	font-size: 1.05em;
 	letter-spacing: 1.2px;
 }
+
+.ourserv-1 {	
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.ourserv-1txt {
+	width: 75%;
+}
+.ourserv-2 {	
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.ourserv-2txt {
+	width: 75%;
+}
+
 
 /* description basis */
 
@@ -606,4 +640,59 @@ footer a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+@media screen and (min-width: 144px) and (max-width: 775px) {
+	h2 {
+		font-size: 20px;
+	}
+	#description p {
+		font-size: 10px
+	}
+	#description h3 {
+		font-size: 10px
+	}
+
+	.ourserv-1 {
+		display: flex;
+		/* align-content: center; */
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.ourserv-1txt {
+		text-align: center;
+		width: 100%;
+	}
+
+	.ourserv-2 {
+		display: flex;
+		/* align-content: center; */
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.ourserv-2txt {
+		text-align: center;
+		width: 100%;
+	}
+
+	.info {
+		font-size: 0.9em;
+	}
+
+	.game.e , .game.g , .game.f{
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		height: 65%;
+	}
+	.gimg.a , .gimg.b , .gimg.c {
+		width: 100%;
+	}
+
 }

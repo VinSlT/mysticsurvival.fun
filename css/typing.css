@@ -1,5 +1,5 @@
 /* Google Fonts */
-@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+/* @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro); */
 
 /* Global */
 /* html{
@@ -15,7 +15,7 @@ body{
 } */
 .line-1{
     color: rgba(255,255,255,.75);
-    font-family: 'Anonymous Pro', monospace;
+    /* font-family: 'Anonymous Pro', monospace; */
     /* position: relative;
     top: 50%;   */
     width: 24em;
@@ -31,7 +31,7 @@ body{
 /* Animation */
 .anim-typewriter{
   animation: typewriter 4s steps(35) 1s 1 normal both,
-             blinkTextCursor 500ms steps(35) infinite normal;
+            blinkTextCursor 500ms steps(35) infinite normal;
 }
 @keyframes typewriter{
   from{width: 0;}
@@ -40,4 +40,37 @@ body{
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
+}
+
+
+
+@media screen and (min-width: 144px) and (max-width: 775px) {
+  .line-1{
+    color: rgba(255,255,255,.75);
+    /* font-family: 'Anonymous Pro', monospace; */
+    /* position: relative;
+    top: 50%;   */
+    width: 20em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 110%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 3s steps(35) 1s 1 normal both,
+            blinkTextCursor 500ms steps(35) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 19em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
 }
