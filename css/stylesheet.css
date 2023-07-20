@@ -120,6 +120,15 @@ h3 {
 	letter-spacing: 1.2px;
 }
 
+.ourserv {
+	display: flex;
+	flex-direction: column;
+	-webkit-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.7);
+	-moz-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.7);
+	box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.7);
+
+}
+
 .ourserv-1 {	
     display: flex;
     flex-direction: row;
@@ -202,6 +211,12 @@ hr {
 .staff {
 	padding: 20px 0;
 	background-color: #5f3f1f;
+}
+
+.skinbox {
+	-webkit-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.7);
+		-moz-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.7);
+		box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.7);
 }
 
 .staff h2 {
@@ -325,6 +340,13 @@ footer a {
 		font-size: 1.15em;
 	}
 
+	.game.f {
+		background-color: #1e5a2ad5;
+		-webkit-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.5);
+		-moz-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.5);
+		box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.5);
+	}
+
 	#description {
 		flex-wrap: nowrap;
 	}
@@ -362,6 +384,9 @@ footer a {
 
 	.staff {
 		padding: 40px 0;
+		-webkit-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.7);
+		-moz-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.7);
+		box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.7);
 	}
 
 	.an-t {
@@ -442,7 +467,7 @@ footer a {
 		-webkit-transform: translate(100%, -50%);	
 		transform: translate(100%, -50%);
 		}
-		
+
 		.ul__nav a:hover,	
 		.ul__nav .home a { 
 			color: #ffffff;
@@ -502,7 +527,7 @@ footer a {
 
 .logo2 {
 	width: 300px;
-	height: 300px;
+	height: 300px; 
 	background-image: url('../img/logo2.png');
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -511,6 +536,23 @@ footer a {
 	transform: translateX(-50%);
 	margin-top: -350px;
 }
+.logo2, .info, .line-1, .anim-typewriter {
+	animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+ 
+@keyframes fadeInAnimation {
+    0% {
+		filter: blur(4px);
+        opacity: 0;
+    }
+    100% {
+		filter: blur(0);
+        opacity: 1;
+     }
+}
+
 
 .buttonip {
 	background-color: transparent;
@@ -642,6 +684,60 @@ footer a {
 	align-items: center;
 }
 
+/* .cright {
+
+} */
+
+.mysticfooter {
+	display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #23272b;
+    padding: 15px 25px;
+    flex-direction: column-reverse;
+    align-content: center;
+}
+
+.logo-socials {
+	width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* align-content: center; */
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.socials {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 100px;
+	width: 200px;
+}
+
+.socials a {
+	position: relative;
+	display: flex;
+	width: fit-content;
+	height: fit-content;
+}
+
+.yt {
+	height: 50px;
+	width: 50px;
+}
+
+.ds {
+	height: 32.5px;
+	width: 45px;
+}
+
+.twtr {
+	height: 32.5px;
+	width: 45px;
+}
+
 @media screen and (min-width: 144px) and (max-width: 775px) {
 	h2 {
 		font-size: 20px;
@@ -704,6 +800,14 @@ footer a {
 		text-align: center;
 		height: 65%;
 	}
+
+	/* .game.f {
+		background-color: #1e5a2ad5;
+		-webkit-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.5);
+		-moz-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.5);
+		box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.5);
+	} */
+
 	.gimg.a , .gimg.b , .gimg.c {
 		width: 100%;
 	}
@@ -711,9 +815,16 @@ footer a {
 	.staff-team img {
 		width: 150px;
 	}
-	.mysticfooter img {
-		width: 50%;
-		height: 50%;
+
+	/* .staff {
+		-webkit-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.6);
+		-moz-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.6);
+		box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.6);
+	} */
+
+	.footer_MS_logo {
+		width: 30%;
+		height: 30%;
 	}
 	.mysticfooter p {
 		font-size: smaller;
