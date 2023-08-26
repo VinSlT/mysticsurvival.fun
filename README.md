@@ -1,1 +1,1 @@
-# mysticsurvival.fun
+# mc.mysticsurvival.fun
