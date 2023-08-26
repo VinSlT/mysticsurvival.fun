@@ -1,0 +1,148 @@
+.scroll {
+    /* padding-top: 100px; */
+	width: 60px;
+	height: 60px;
+	border: 2px solid #6e6e6e;
+	border-radius: 50%;
+	position: relative;
+    /* margin-top: 10%; */
+	animation: fadeInAnimation ease 3s;
+	-webkit-animation: fadeInAnimation ease 3s;
+
+    animation: fadeInAnimation ease 3s, 3.5s down 2s infinite;
+	-webkit-animation: fadeInAnimation ease 3s, 3.5s down 2s infinite;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 15px;
+		left: 18px;
+		width: 18px;
+		height: 18px;
+		border-left: 2px solid #6e6e6e;
+  	border-bottom: 2px solid #6e6e6e;
+		transform: rotate(-45deg);
+	}
+}
+/* 
+.scroll {
+	animation: fadeInAnimation ease 3s, down;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+} */
+ 
+@keyframes fadeInAnimation {
+    0% {
+		filter: blur(4px);
+        opacity: 0;
+    }
+    100% {
+		filter: blur(0);
+        opacity: 1;
+     }
+}
+
+@keyframes down {
+	0% {
+        filter: blur(0px);
+		transform: translate(0);
+	}
+	20% {
+        filter: blur(0.5px);
+		transform: translateY(15px);
+	}
+	40% {
+        filter: blur(0.7px);
+		transform: translate(0);
+	}
+}
+
+@-webkit-keyframes down {
+	0% {
+        filter: blur(0px);
+		transform: translate(0);
+	}
+	20% {
+        filter: blur(0.5px);
+		transform: translateY(15px);
+	}
+	40% {
+        filter: blur(0.7px);
+		transform: translate(0);
+	}
+}
+
+
+
+
+
+
+@media screen and (min-width: 144px) and (max-width: 775px) {
+
+    .scroll {
+        /* padding-top: 100px; */
+        width: 40px;
+        height: 40px;
+        border: 2px solid #6e6e6e;
+        border-radius: 50%;
+        position: relative;
+        /* margin-top: 10%; */
+        animation: fadeInAnimation ease 3s;
+	    -webkit-animation: fadeInAnimation ease 3s;
+
+        animation: fadeInAnimation ease 3s, 3.5s down 2s infinite;
+        -webkit-animation: fadeInAnimation ease 3s, 3.5s down 2s infinite;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 9px;
+        left: 11px;
+        width: 12px;
+        height: 12px;
+        border-left: 2px solid #6e6e6e;
+        border-bottom: 2px solid #6e6e6e;
+        transform: rotate(-45deg);
+
+        }
+    }
+    
+    @keyframes fadeInAnimation {
+        0% {
+            filter: blur(4px);
+            opacity: 0;
+        }
+        100% {
+            filter: blur(0);
+            opacity: 1;
+         }
+    }
+    
+    @keyframes down {
+        0% {
+            filter: blur(0px);
+            transform: translate(0);
+        }
+        20% {
+            filter: blur(0.5px);
+            transform: translateY(7.5px);
+        }
+        40% {
+            filter: blur(0.7px);
+            transform: translate(0);
+        }
+    }
+    
+    @-webkit-keyframes down {
+        0% {
+            filter: blur(0px);
+            transform: translate(0);
+        }
+        20% {
+            filter: blur(0.5px);
+            transform: translateY(7.5px);
+        }
+        40% {
+            filter: blur(0.7px);
+            transform: translate(0);
+        }
+    }
+}
