@@ -180,7 +180,13 @@ h3 {
 
 #games h2 {
 	margin: 0;
-	padding: 40px 0 0 0;
+	text-align: center;
+	padding: 20px;
+}
+
+.why-h2 {
+	background-color: #1e5a2ad5;
+	box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
 .game h3 {
@@ -536,7 +542,7 @@ footer a {
 	transform: translateX(-50%);
 	margin-top: -350px;
 }
-.logo2, .info, .line-1, .anim-typewriter {
+.logo2, .info, .line-1, .anim-typewriter, .scroll {
 	animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -684,10 +690,6 @@ footer a {
 	align-items: center;
 }
 
-/* .cright {
-
-} */
-
 .mysticfooter {
 	display: flex;
     align-items: center;
@@ -791,6 +793,8 @@ footer a {
 		flex-wrap: wrap;
 		padding: 40px 0px;
 	}
+
+
 
 	.game.e , .game.g , .game.f{
 		display: flex;
