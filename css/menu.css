@@ -1,0 +1,175 @@
+/* #menu-box {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+     width: 100px;
+    height: 8px; 
+} */
+
+#menu-button-box {
+    z-index: 2;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    float:left;
+    cursor: pointer;
+  }
+
+  .line {
+    border-radius: 2px;
+    margin: 8px;
+    display: block;
+    background-color: white;
+    height: 5px;
+    width: 50px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+
+  #menu-button-box.open .line:nth-child(2){
+    opacity: 0;
+  }
+  
+  #menu-button-box.open .line:nth-child(1){
+    -webkit-transform: translateY(13px) rotate(45deg);
+    -ms-transform: translateY(13px) rotate(45deg);
+    -o-transform: translateY(13px) rotate(45deg);
+    transform: translateY(13px) rotate(45deg);
+  }
+  
+  #menu-button-box.open .line:nth-child(3){
+    -webkit-transform: translateY(-13px) rotate(-45deg);
+    -ms-transform: translateY(-13px) rotate(-45deg);
+    -o-transform: translateY(-13px) rotate(-45deg);
+    transform: translateY(-13px) rotate(-45deg);
+  }
+/* ------------------------- */
+
+.menu-box {
+    visibility: hidden;
+    z-index: 1;
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(53, 53, 53);
+    border-radius: 5px; */
+}
+
+.menu-box a {
+    font-family: "Open Sans", Helvetica;
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color:white
+}
+
+.menu-box p {
+   cursor: default;
+    font-family: "Open Sans", Helvetica;
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    color:white;
+}
+
+.menu-sign {
+    border: 1px solid rgba(49, 49, 49, 1);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.contact , .donation , .about-server , .menu-sign {
+  width: 100%;
+  text-align: center;
+}
+
+.menu-box {
+
+background: rgba(49, 49, 49, 0.35);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.4px);
+-webkit-backdrop-filter: blur(1.4px);
+border: 1px solid rgba(49, 49, 49, 1);
+}
+
+.contact:hover , .donation:hover , .about-server:hover {
+animation: menuhover .7s ease-in-out;
+background: rgba(187, 187, 187, 0.45);
+border-radius: 3px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu-box.open-box {
+    animation: fadeInAnimation1 ease .5s;
+    visibility: visible;
+}
+
+@keyframes fadeInAnimation1 {
+    0% {
+		filter: blur(4px);
+        opacity: 0;
+    }
+    90% {
+		filter: blur(0);
+        opacity: 1;
+    }
+    50% {
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.2);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.2);
+    }
+    100% {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none
+    }
+}
+
+@keyframes menuhover {
+  0% {
+  }
+
+  80% {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.4);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+
+@media screen and (min-width: 144px) and (max-width: 775px) {
+    .menu-line {
+        width: 40px;
+        height: 8px;
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255);
+        margin: 6px 0;
+      }
+    
+    .menu-box {
+        position: absolute;
+        top: 1%;
+        right: 2%;
+    }
+}
