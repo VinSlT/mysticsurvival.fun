@@ -90,7 +90,7 @@
     border-right: none;
 }
 
-.contact , .donation , .about-server , .menu-sign {
+.index-page, .contact , .donation , .about-server , .menu-sign {
   width: 100%;
   text-align: center;
 }
@@ -105,7 +105,7 @@ backdrop-filter: blur(1.4px);
 border: 1px solid rgba(49, 49, 49, 1);
 }
 
-.contact:hover , .donation:hover , .about-server:hover {
+.index-page:hover , .contact:hover , .donation:hover , .about-server:hover {
 animation: menuhover .7s ease-in-out;
 background: rgba(187, 187, 187, 0.45);
 border-radius: 3px;
