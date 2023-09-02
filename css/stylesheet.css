@@ -53,11 +53,8 @@ h3 {
 .hero {
 	height: 50vh;
 	width: 100%;
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-		url("../img/mech.png") no-repeat center center;
 	background-size: cover;
 	text-align: center;
-
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -520,7 +517,7 @@ footer a {
 
 
 /* Top AVA Serva */
-.logo {
+/* .logo {
 	width: 200px;
 	height: 200px;
 	background-image: url('../img/logo2.png');
@@ -529,7 +526,7 @@ footer a {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-}
+} */
 
 .logo2 {
 	width: 300px;
@@ -542,6 +539,9 @@ footer a {
 	transform: translateX(-50%);
 	margin-top: -350px;
 }
+/* .info, .line-1, .anim-typewriter, .scroll {
+	opacity: 0;
+} */
 .logo2, .info, .line-1, .anim-typewriter, .scroll {
 	animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
@@ -820,11 +820,11 @@ footer a {
 		width: 150px;
 	}
 
-	.logo2 {
+	/* .logo2 {
 		width: 250px;
 		height: 250px;
 		margin-bottom: 250px;
-	}
+	} */
  
 	/* .staff {
 		-webkit-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.6);
