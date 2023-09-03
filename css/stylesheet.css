@@ -740,6 +740,18 @@ footer a {
 	width: 45px;
 }
 
+@font-face {
+    font-family: 'Minecraft';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Minecraft'), url('https://fonts.cdnfonts.com/s/36662/MinecraftTen-VGORe.woff') format('woff');
+  }
+  .skinbox > h3 {
+    font-family: 'Minecraft';
+    font-style: normal;
+    font-weight: 400;
+  }
+
 @media screen and (min-width: 144px) and (max-width: 775px) {
 	h2 {
 		font-size: 20px;
